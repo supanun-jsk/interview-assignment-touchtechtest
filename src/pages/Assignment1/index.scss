@@ -1,0 +1,16 @@
+.Assignment1-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #DBDBDB;
+  grid-gap: 2px;
+  height: 100vh;
+}
+
+.Assignment1-child {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}

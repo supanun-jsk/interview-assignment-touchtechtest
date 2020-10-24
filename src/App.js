@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { withRouter, Switch, Route } from 'react-router-dom'
+import Assignment1 from './pages/Assignment1';
+import Assignment2 from './pages/Assignment2';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path="/" component={Assignment1}/>
+      {/* <Route exact path="/" component={Assignment2}/> */}
+    </Switch>
   );
 }
 
-export default App;
+export default withRouter(App);
