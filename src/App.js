@@ -1,6 +1,6 @@
 import { withRouter, Switch, Route } from 'react-router-dom'
 import Assignment1 from './pages/Assignment1';
-import Assignment2 from './pages/Assignment2';
+// import Assignment2 from './pages/Assignment2';
 
 const App = () => {
   return (
